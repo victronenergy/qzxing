@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 3.24)
 project(QZXing)
 
 find_package(Qt6 COMPONENTS Core Gui Svg Quick QuickControls2 REQUIRED)
