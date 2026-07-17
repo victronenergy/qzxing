@@ -1,6 +1,6 @@
 import QtQuick 2.5
 import QtQuick.Window 2.0
-import QtQuick.Controls 2.0
+import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.1
 import QtMultimedia 5.5
 
