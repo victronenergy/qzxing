@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
 project(QZXing)
 
-find_package(Qt6 COMPONENTS Core Gui Svg Quick QuickControls2 REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Svg Quick REQUIRED)
 
 SET(BIGINT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/zxing/bigint)
 SET(WIN32_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/zxing/win32/zxing)
@@ -72,8 +72,7 @@ endif(QZXING_MULTIMEDIA)
 if(QZXING_USE_QML)
     target_link_libraries(qzxing
         Qt6::Svg
-        Qt6::Quick
-        Qt6::QuickControls2)
+        Qt6::Quick)
     target_compile_definitions(qzxing PUBLIC -DQZXING_QML)
 endif(QZXING_USE_QML)
 
